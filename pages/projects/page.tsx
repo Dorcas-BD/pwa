@@ -67,7 +67,7 @@ const projects: Project[] = [
   },
   {
     title: "Note App",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "A note taking react Application.",
     link: "https://react-note-taking-app.netlify.app",
     imgSrc: "/work5.png",
     technologies: "React",
