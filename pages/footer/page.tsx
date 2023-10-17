@@ -25,7 +25,9 @@ const Footer = () => {
           <i className="fab fa-twitter"></i>
         </a>
       </div>
-      <p className="footer__copy">Built With NextJS &copy; 2023</p>
+      <p className="footer__copy">
+        Built With NextJS and Typescript &copy; 2023
+      </p>
     </footer>
   );
 };
