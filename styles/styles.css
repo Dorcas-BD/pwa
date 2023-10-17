@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,7 @@
   bottom: 30px;
   right: 110px;
   font-size: 20px;
+  font-family: "Roboto Slab", serif;
 }
 
 li {
@@ -70,9 +72,30 @@ a {
   max-width: 40%;
   text-align: left;
 }
+.hero-text .hero-text-p {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
 
 .hero-text h1 {
   line-height: 30px;
+  font-family: "Montserrat", "san serif";
+  font-weight: 600;
+}
+
+.home-heading {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home-heading span {
+  color: #fe8f5b;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Playfair Display", "san serif";
+  margin-left: 10px;
 }
 
 .hire-btn {
@@ -83,14 +106,19 @@ a {
   height: 50px;
   background: #fe8f5b;
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 6px;
   font-size: 18px;
+  font-family: "Montserrat", serif;
   font-weight: 500;
   text-transform: uppercase;
   margin: 20px 0;
   cursor: pointer;
   transition: 0.5s;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.hire-btn:hover {
+  background: #ab400f;
 }
 
 .home-social {
@@ -129,19 +157,6 @@ a {
   }
 }
 
-.home-heading {
-  font-size: 34px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.home-heading span {
-  color: #fe8f5b;
-  font-size: 40px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
 .home-social li {
   display: flex;
   justify-content: center;
@@ -156,9 +171,10 @@ a {
 .about-container {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ffece3;
 
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -170,6 +186,7 @@ a {
 .about-container .image {
   flex: 4;
 }
+
 .about-container .image img {
   object-fit: cover;
   width: 100%;
@@ -226,14 +243,17 @@ a {
 
 .about-container .tab-title {
   font-size: 28px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
   cursor: pointer;
   font-weight: bold;
   border: 2px solid transparent;
   border-radius: 5px;
-  transition: background-color 0.5s ease, color 0.6s ease;
+  transition: background-color 0.5s ease;
 }
 
-.tab-title:hover {
+.tab-title:hover,
+.tab-title.active-tab {
   background-color: #fe8f5b;
   color: #ffffff;
   padding: 10px 20px;
@@ -244,12 +264,17 @@ a {
 }
 .about-container .about-summary h3 {
   font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
 }
 .about-container .about-summary p {
   font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 .about-container .tab-content {
+  height: 70vh;
   position: relative;
   top: 30px;
 }
@@ -257,18 +282,17 @@ a {
 .about-container .tab-content li span {
   color: #b1400b;
   font-size: 22px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-style: italic;
 }
 .about-container .tab-content li {
   font-size: 18px;
   padding: 10px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 /* Project */
-
-.work-section {
-}
 
 .work {
   text-align: center;
@@ -282,28 +306,38 @@ a {
 }
 
 .work-item {
-  border: 1px solid #ccc;
   padding: 20px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .work-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .work-title {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .work-description {
-  font-size: 0.9em;
+  font-size: 15px;
   margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+.technologies {
+  margin: 15px 0;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
 }
 
 .work-link {
@@ -321,6 +355,11 @@ a {
 }
 
 /* Contacts */
+
+.contact {
+  background: #ffece3;
+  padding-top: 30px;
+}
 
 .contact__container {
   display: flex;
@@ -343,12 +382,14 @@ a {
 }
 
 .contact__data .contact__subtitle {
-  font-size: 28px;
   margin-bottom: 5px;
+  font-family: "Roboto Slab", serif;
 }
 
 .contact__data .contact__description {
-  padding-left: 10px;
+  padding: 5px 0 0 10px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 .contact__form {
@@ -365,6 +406,9 @@ a {
   border: 1px solid #ccc;
   border-radius: 10px;
   resize: none;
+  outline: none;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 .contact__input:focus,
@@ -384,7 +428,10 @@ a {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1;
+  font-size: 20px;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  outline: none;
 }
 
 .contact__input[type="button"]:hover {
@@ -406,7 +453,9 @@ a {
 }
 
 .footer__title {
-  font-size: 1.5em;
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -422,7 +471,9 @@ a {
 }
 
 .footer__copy {
-  font-size: 0.8em;
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
   margin-top: 10px;
 }
 
@@ -432,6 +483,7 @@ a {
 
 .section-title {
   font-size: 32px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #ab400f;
   margin-bottom: 10px;
@@ -544,7 +596,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
   }
 
   .about-container .image {
@@ -580,14 +631,15 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .contact {
-    height: 90vh;
-  }
   .contact,
   .contact__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact__data .contact__information {
+    font-size: 18px;
   }
 }
 
@@ -605,6 +657,23 @@ a {
   }
   .work-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__data .contact__information {
+    font-size: 22px;
+  }
+
+  .about-container .image {
+    flex: 4;
+  }
+
+  .about-container .image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 60px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
   }
 }
 
@@ -637,5 +706,8 @@ a {
 
   .work-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .contact__data .contact__information {
+    font-size: 28px;
   }
 }
