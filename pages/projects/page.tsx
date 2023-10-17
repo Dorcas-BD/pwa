@@ -1,4 +1,13 @@
-const projects = [
+import React from "react";
+
+interface Project {
+  title: string;
+  description: string;
+  link: string;
+  imgSrc: string;
+}
+
+const projects: Project[] = [
   {
     title: "Farm Logistics",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
