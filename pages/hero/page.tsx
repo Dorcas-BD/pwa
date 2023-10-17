@@ -13,14 +13,12 @@ const Hero = () => {
             <br />I am a Software Engineer
           </h1>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perferendis nulla, ipsa id at illum exercitationem voluptatibus
-            recusandae molestias expedita quod! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Voluptatem, veritatis! Lorem, ipsum
-            dolor sit amet consectetur adipisicing elit. Quod eveniet est
-            deleniti sed! Soluta, eveniet dolorem officiis ratione vero
-            incidunt. <span className="circle-animation"></span>
+          <p className="hero-text-p">
+            Proficient Software Engineer with expertise in JavaScript,
+            TypeScript, React, Next.js, and React Native. Experience in Web3,
+            utilizing Solidity, Hardhat, and Truffle for decentralized
+            applications. Passionate about open source contributions and driven
+            to create innovative, user-centric web and mobile experiences.
           </p>
 
           <div className="hie-btn">
@@ -29,7 +27,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div class="home-img">
+        <div className="home-img">
           <div className="computer-animation"></div>
           <img className="hero-img" x="50" y="60" src="/perfil.png" />
         </div>
