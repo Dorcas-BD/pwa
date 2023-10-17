@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: "Movie Box",
     description:
       "A movie website showcasing a search option and user sign-in functionality. The platform presents a curated collection of featured movies, providing details such as release dates, IMDb ratings, and genres sourced from theMoviedb API. Users have the option to view trailers and delve into a broader range of movies for an enhanced cinematic experience.",
-    link: "https://task-manager-three-amber.vercel.app/",
+    link: "https://movie-box-tymr.vercel.app/",
     imgSrc: "/work6.PNG",
     technologies: "Nextjs, CSS, TMDb API, Youtube API",
   },
