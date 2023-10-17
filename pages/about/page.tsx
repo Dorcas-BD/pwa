@@ -32,35 +32,49 @@ const About: React.FC = () => {
 
   const skills: Skill[] = [
     {
-      title: "Technical Skills",
-      content:
-        "HTML, CSS, SCSS/SASS, Javascript, ReactJs, Material UI, Git, Blockchain, Web3.js, Solidity, Hardhat, and Truffle",
+      title: "Programming Languages",
+      content: "Javascript/Typescript, Solidity, Python",
     },
+    {
+      title: "Frontend",
+      content:
+        "HTML, CSS, SCSS/SASS, Bootstrap, Typescript, React.js, Nextjs, React-Native, Material UI, TailwindUI, Wordpress, Figma",
+    },
+    {
+      title: "Backend",
+      content: "Docker, NodeJs, MongoDB,  Git",
+    },
+    {
+      title: "Blockchain",
+      content:
+        "Blockchain, Ethereum, EtherJs,  Web3.js, Ganache CLI, Hardhat, Truffle.",
+    },
+
     {
       title: "Soft Skills",
       content:
-        "Googling skills to help solve technical problems, Ability to work remotely, Art of reading and understanding Documentation, Ability to communicate and collaborate well with team members, Teamwork and Decision Making",
+        "Proficient Googling, Remote work efficiency, Effective documentation comprehension, Excellent communication and collaboration, Strong teamwork and decision-making",
     },
   ];
 
   const experiences: Experience[] = [
     {
       title: "Frontend Developer Intern",
-      content: "Health Information System - July 2021 - December, 2021",
+      content: "Health Information System: July 2021 - December, 2021",
     },
     {
       title: "Software Developer Fellow ",
-      content: "Women Techsters Fellowship - April 2021 - March 2022",
+      content: "Women Techsters Fellowship: April 2021 - March 2022",
     },
     {
       title: "Blockchain Developer ",
-      content: "Web3bridge - July 2021 - January 2022 - April 2022",
+      content: "Web3bridge: July 2021 - January 2022 - April 2022",
     },
   ];
 
   const educations: Education[] = [
     {
-      title: " BSc Computer Science with Mathematics ",
+      title: " BSc. Computer Science with Mathematics ",
       content: " Obafemi Awolowo University - April 2017 - August 2023",
     },
   ];
@@ -83,11 +97,15 @@ const About: React.FC = () => {
             <div className="about-summary">
               <h3 className="about-me-title">Summary</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-                iusto, molestiae similique aperiam modi voluptates doloremque
-                dolorum deleniti quos suscipit? Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Veniam ad pariatur tempora omnis
-                quos, ipsa laboriosam! At, ipsa itaque. Est!
+                I am a proficient Software Engineer specializing in frontend
+                development, leveraging my expertise in JavaScript and
+                TypeScript. With a strong grasp of React, Next.js, and React
+                Native, I excel in crafting exceptional web and mobile
+                experiences. Experience in Web3 and blockchain technologies,
+                employing Solidity, Hardhat, and Truffle for decentralized
+                application development. Passionate about open source
+                contributions and committed to creating innovative and
+                user-centric solutions.
               </p>
             </div>
           </div>
