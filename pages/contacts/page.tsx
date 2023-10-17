@@ -1,26 +1,32 @@
-const Contacts = () => {
+import React from "react";
+
+interface Contact {
+  title: string;
+  value: string;
+  icon?: string;
+}
+
+const Contacts: React.FC = () => {
+  const contactData: Contact[] = [
+    {
+      title: "Email:",
+      value: "bamisiledorcas@gmail.com",
+    },
+    {
+      title: "Phone Number:",
+      value: "+2347057258425",
+    },
+  ];
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section-title">Contact</h2>
       <div className="contact__container">
         <div className="contact__data">
-          {[
-            {
-              title: "Email:",
-              description: "bamisiledorcas@gmail.com",
-            },
-            {
-              title: "Email:",
-              description: "bamisiledorcas@outlook.com",
-            },
-            {
-              title: "Phone Number:",
-              description: "+2347057258425",
-            },
-          ].map((item, index) => (
+          {contactData.map((item, index) => (
             <div key={index} className="contact__information">
               <h3 className="contact__subtitle">{item.title}</h3>
-              <span className="contact__description">{item.description}</span>
+              <span className="contact__description">{item.value}</span>
             </div>
           ))}
         </div>
