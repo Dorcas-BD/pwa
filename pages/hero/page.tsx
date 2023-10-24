@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 const Hero = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="home-data">
         <div className="hero-text">
           <h1 className="home-heading">
@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
 
           <div className="hie-btn">
-            <Link href="#contacts" className="hire-btn">
+            <Link href="/page/contacts" className="hire-btn">
               Hire Me
             </Link>
           </div>

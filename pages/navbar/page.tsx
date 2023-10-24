@@ -1,18 +1,22 @@
 "use client";
 
 import React, { useState } from "react";
-import "../../styles/styles.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Link as ScrollLink } from "next-scroll";
+import "../../styles/styles.css";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
+
   const toggleNavbar = () => {
     setNavbar(!navbar);
   };
+
   const handleMobileNavClick = () => {
     setNavbar(false);
   };
+
   return (
     <nav className="navbar">
       <div className="nav-logo">
@@ -35,16 +39,16 @@ const NavBar = () => {
       <div className="nav-list">
         <ul className="nav-menu">
           <li>
-            <Link href="#home">Home</Link>
+            <ScrollLink to="home">Home</ScrollLink>
           </li>
           <li>
-            <Link href="#about">About</Link>
+            <ScrollLink to="about">About</ScrollLink>
           </li>
           <li>
-            <Link href="#projects">Projects</Link>
+            <ScrollLink to="projects">Projects</ScrollLink>
           </li>
           <li>
-            <Link href="#contact">Contacts</Link>
+            <ScrollLink to="contact">Contacts</ScrollLink>
           </li>
         </ul>
       </div>
@@ -52,16 +56,16 @@ const NavBar = () => {
         <div className="nav-mobile">
           <ul className="nav-menu">
             <li onClick={handleMobileNavClick}>
-              <Link href="#home">Home</Link>
+              <ScrollLink to="home">Home</ScrollLink>
             </li>
             <li onClick={handleMobileNavClick}>
-              <Link href="#about">About</Link>
+              <ScrollLink to="about">About</ScrollLink>
             </li>
             <li onClick={handleMobileNavClick}>
-              <Link href="#projects">Projects</Link>
+              <ScrollLink to="projects">Projects</ScrollLink>
             </li>
             <li onClick={handleMobileNavClick}>
-              <Link href="#contact">Contacts</Link>
+              <ScrollLink to="contact">Contacts</ScrollLink>
             </li>
           </ul>
         </div>
