@@ -45,6 +45,10 @@ const About: React.FC = () => {
       content: "Docker, NodeJs, MongoDB,  Git",
     },
     {
+      title: "Testing",
+      content: "Jest, React Testing Library",
+    },
+    {
       title: "Blockchain",
       content:
         "Blockchain, Ethereum, EtherJs,  Web3.js, Ganache CLI, Hardhat, Truffle.",
