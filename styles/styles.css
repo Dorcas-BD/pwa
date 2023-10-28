@@ -531,7 +531,7 @@ a {
 
   .navbar .logo {
     top: 0;
-    font-size: 24px;
+    font-size: 20px;
     left: 20px;
   }
 
@@ -556,31 +556,37 @@ a {
   }
 
   .home-heading {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 25px;
   }
 
   .home-heading span {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .hero-text {
     max-width: 100%;
     text-align: justify;
-    padding: 0 30px;
+    padding: 0 15px;
   }
   .hero-text h1 {
     text-align: center;
   }
 
-  .hero-text p {
-    font-size: 13px;
+  .hero-text .hero-text-p {
+    font-size: 14px;
   }
+
   .hero-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0;
     z-index: 1;
+  }
+
+  .home-social-icon {
+    margin: 0 15px;
+    font-size: 20px;
   }
 
   .hire-btn {
@@ -588,7 +594,6 @@ a {
     width: 100px;
     height: 40px;
     font-size: 14px;
-    margin: 20px 0;
     justify-content: center;
   }
 
@@ -596,7 +601,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .about-container {
@@ -606,23 +611,53 @@ a {
   }
 
   .about-container .image {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
   .about-container .image img {
     bottom: 10px;
   }
 
+  .about-container .about-summary {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .about-container .about-summary h3 {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+  }
+  .about-container .about-summary p {
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    text-align-last: left;
+  }
+
   .about-container .tab-titles {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    justify-content: space-between;
+    position: relative;
     top: 20px;
   }
 
   .about-container .tab-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .about-container .tab-content {
+    height: 38vh;
+    position: relative;
     top: 30px;
+  }
+
+  .about-container .tab-content li span {
+    font-size: 15px;
+  }
+  .about-container .tab-content li {
+    font-size: 14px;
   }
 
   .tab-contents .section-title {
@@ -638,6 +673,27 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .work-title {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .work-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+  }
+
+  .technologies {
+    margin: 15px 0;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+  }
+
   .contact,
   .contact__container {
     display: flex;
@@ -646,7 +702,23 @@ a {
   }
 
   .contact__data .contact__information {
+    font-size: 14px;
+  }
+
+  .contact__input[type="button"] {
+    font-size: 15px;
+  }
+
+  .footer__title {
+    font-size: 20px;
+  }
+
+  .footer__icon {
     font-size: 18px;
+  }
+
+  .footer__copy {
+    font-size: 14px;
   }
 }
 
