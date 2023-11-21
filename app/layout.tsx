@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dorcas Bamisile",
   description: "Dorcas Bamisile portfolio",
+  manifest: "/manifest.json",
+  icons: { apple: "/icon.png" },
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
